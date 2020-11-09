@@ -1,0 +1,73 @@
+<!DOCTYPE >
+<html>
+    <head>
+         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>       
+        <div id="main"> 
+          <h1>Calculatrice</h1>
+          <div id="calculator">
+            <form  name ="form1">
+                <input class="textview" id="number" name ="textview">
+            </form>
+            <div id="body">
+            <table>
+                <tr>
+                    <td><input class="button" type="button" value="%" onclick="fprt()"></td>
+                    <td><input class="button" type="button" value="x²" onclick="carre()"></td>
+                    <td><input class="button" type="button" value="/x" onclick="fdiv()"></td>
+                    <td><input class="button" type="button" value="sqrt" onclick="Racin()"></td>
+                    <td><input class="button" type="button" value="cos" onclick="fcos()"></td>
+                </tr>
+                <tr>
+                        <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+                        <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+                        <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+                        <td><input class="button" type="button" value="+" onclick="insert('+')"></td>
+                        <td><input class="button" type="button" value="sin" onclick="fsin()"></td>
+                    </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+                    <td><input class="button" type="button" value="5" onclick="insert(5)"></td>
+                    <td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+                    <td><input class="button" type="button" value="/" onclick="insert('/')"></td>
+                    <td><input class="button" type="button" value="tan" onclick="ftan()"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+                    <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+                    <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+                    <td><input class="button" type="button" value="*" onclick="insert('*')"></td>
+                    <td><input class="button" type="button" value="ln" onclick="fln()"></td>
+                </tr>
+                <tr>            
+                    <td><input class="button" type="button" value="C" onclick="cancel()"></td>
+                    <td><input class="button" type="button" value="<-" onclick="back()"></td>
+                    <td><input class="button" type="button" value="-" onclick="insert('-')"></td>
+                    <td rowspan="5"><input type="button" style=" width: 60;
+                        height: 120; font-family: Cursive;color: #070707;
+                        font-size: 25;
+                        margin: 2;
+                        cursor: pointer;
+                        border-radius: 20px;" value="=" onclick="resulta()"></td>
+                    <td><input class="button" type="button" value="exp" onclick="fexp()"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input  type="button"  Style=" width: 140;
+                        height: 60; font-family: Cursive;color: #131212;
+                        font-size: 25;
+                        margin: 2;
+                        cursor: pointer;
+                        border-radius: 20px;" value="0" onclick="insert(0)"></td>
+                    <td ><input class="button" type="button" value="." onclick="insert('.')"></td>
+                    <td><input class="button" type="button" value="n! " onclick="fn()"></td>  
+                </tr>
+            </table>
+          </div>
+          </div>
+        </div>
+        <script src="Js/jquery-3.5.1.slim.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
